@@ -1,0 +1,7 @@
+Strategies for group calls
+
+1. Mesh - Multiple Direct Connections
+
+// Below two are advance once used in google meet and Microsoft teams
+2. MCU - Multipoint Control Units
+3. SFU - Selective Forwarding Units
