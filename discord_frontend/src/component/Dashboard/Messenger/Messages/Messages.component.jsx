@@ -1,8 +1,6 @@
-import React, { userRef, useEffect } from "react";
 import { styled } from "@mui/system";
 import MessagesHeader from "./MessagesHeader.component";
 import { connect } from "react-redux";
-import DUMMY_MESSAGES from "./DUMMY_MESSAGES.JS";
 import Message from "./Message.component";
 import DateSeparator from "./DateSeparator.component";
 
