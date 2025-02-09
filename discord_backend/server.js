@@ -25,13 +25,13 @@ const PORT = process.env.PORT || process.env.API_PORT;
 // when we build the application of client end we need to
 // specify it here
 // When in production or CI environment, serve the React build
-if (["production", "ci"].includes(process.env.NODE_ENV)) {
-  app.use(express.static(path.join(__dirname, "../client/build")));
+// if (["production", "ci"].includes(process.env.NODE_ENV)) {
+//   app.use(express.static(path.join(__dirname, "../client/build")));
 
-  app.get("*", (req, res) => {
-    res.sendFile(path.resolve(__dirname, "../client/build", "index.html"));
-  });
-}
+//   app.get("*", (req, res) => {
+//     res.sendFile(path.resolve(__dirname, "../client/build", "index.html"));
+//   });
+// }
 
 server.listen(PORT, () => {
   console.log(`Server is listening on ${PORT}`);
