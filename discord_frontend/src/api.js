@@ -3,7 +3,7 @@ import { logout } from "./component/shared/utils/auth";
 
 // Create an Axios instance
 const apiClient = axios.create({
-  baseURL: "http://localhost:5001/api",
+  baseURL: process.env.REACT_APP_API_URL,
   timeout: 3000,
 });
 
