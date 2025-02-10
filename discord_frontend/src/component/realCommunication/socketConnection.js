@@ -21,8 +21,8 @@ export const connectWithSocketServer = (userDetails) => {
   });
 
   socket.on("connect", () => {
-    console.log("succesfully connected with socket.io server");
-    console.log(socket.id);
+    // console.log("succesfully connected with socket.io server");
+    // console.log(socket.id);
   });
 
   socket.on("friends-invitations", (data) => {

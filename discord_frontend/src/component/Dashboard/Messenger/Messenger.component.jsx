@@ -12,7 +12,7 @@ const MainContainer = styled("div")({
 });
 
 const Messenger = ({ chosenChatDetails }) => {
-  console.log("test", chosenChatDetails);
+  // console.log("test", chosenChatDetails);
 
   return (
     <MainContainer>

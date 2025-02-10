@@ -9,7 +9,7 @@ const Wrapper = styled("div")({
 });
 
 const MessengerContent = ({ chosenChatDetails }) => {
-  console.log("test 2", chosenChatDetails);
+  // console.log("test 2", chosenChatDetails);
   useEffect(() => {
     getDirectChatHistory({
       receiverUserId: chosenChatDetails.id,

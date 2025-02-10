@@ -21,7 +21,7 @@ const ScreenShareButton = ({
       try {
         stream = await navigator.mediaDevices.getDisplayMedia(constraints);
       } catch (error) {
-        console.log("screensharing error");
+        // console.log("screensharing error");
       }
 
       if (stream) {

@@ -34,8 +34,8 @@ export const newRoomCreated = (data) => {
 
 export const updateActiveRooms = (data) => {
   const { activeRooms } = data;
-  console.log("new active rooms came from store");
-  console.log(activeRooms);
+  // console.log("new active rooms came from store");
+  // console.log(activeRooms);
 
   const friends = store.getState().friends.friends;
   const rooms = [];
@@ -104,11 +104,11 @@ export const leaveRoom = () => {
 
   // Close local stream
   const localStream = store.getState().room.localStream;
-  console.log("localStream: ", localStream);
+  // console.log("localStream: ", localStream);
   if (localStream) {
-    console.log("Stopping local stream", localStream);
+    // console.log("Stopping local stream", localStream);
     localStream.getTracks().forEach((track) => {
-      console.log("Stopping track", track);
+      // console.log("Stopping track", track);
       track.stop();
     });
     store.dispatch(setLocalStream(null));
@@ -119,9 +119,9 @@ export const leaveRoom = () => {
   // Close screen sharing stream
   const screenSharingStream = store.getState().room.screenSharingStream;
   if (screenSharingStream) {
-    console.log("Stopping screen sharing stream", screenSharingStream);
+    // console.log("Stopping screen sharing stream", screenSharingStream);
     screenSharingStream.getTracks().forEach((track) => {
-      console.log("Stopping track", track);
+      // console.log("Stopping track", track);
       track.stop();
     });
     store.dispatch(setScreenSharingStream(null));

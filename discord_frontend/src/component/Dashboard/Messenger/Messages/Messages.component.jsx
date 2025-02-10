@@ -24,8 +24,8 @@ const convertDateToHumanReadable = (date, format) => {
 };
 
 const Messages = ({ chosenChatDetails, messages }) => {
-  console.log("chat details", chosenChatDetails);
-  console.log("messages", messages);
+  // console.log("chat details", chosenChatDetails);
+  // console.log("messages", messages);
 
   return (
     <MainContainer>
